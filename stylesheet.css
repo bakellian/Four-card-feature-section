@@ -18,7 +18,8 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
     margin-top: 4rem;
     margin-bottom: 5rem;
