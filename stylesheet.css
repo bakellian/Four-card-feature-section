@@ -5,20 +5,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    max-width: 40rem;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
 }
 
 .grid {
     display: grid;
-    /* align-items: center; */
     grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
     margin-top: 4rem;
@@ -26,12 +26,6 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
-
-/* @media (max-width: 950px) {
-    .grid {
-        grid-template-rows: 1fr;
-    }
-  } */
 
 .card-wrapper {
     display: flex;
@@ -90,7 +84,7 @@ p {
     line-height: 1.438rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     /*Styles for viewports narrower than 400 pixels. */
     .grid {
         display: grid;
