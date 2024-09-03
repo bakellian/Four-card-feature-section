@@ -18,7 +18,7 @@ body {
 
 .grid {
     display: grid;
-    align-items: center;
+    /* align-items: center; */
     grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
     margin-top: 4rem;
@@ -47,6 +47,11 @@ body {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
     padding-bottom: 1.875rem;
+}
+
+.img-wrapper {
+    margin-top: 1.875rem;
+    align-self: flex-end;
 }
 
 img {
@@ -84,3 +89,13 @@ p {
     color: #4D4F62;
     line-height: 1.438rem;
 }
+
+@media (max-width: 800px) {
+    /*Styles for viewports narrower than 400 pixels. */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+        margin-bottom: 3rem;
+    }
+  }
